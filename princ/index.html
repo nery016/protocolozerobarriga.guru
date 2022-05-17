@@ -54,7 +54,14 @@
         </div>
       </div>
     </header>
+    <div class="row justify-content-center">
+<span id="number"></span> 0 pessoas estão assistindo a esse vídeo agora!
 
+<script>
+function add(){number+=Math.floor((Math.random()*6)+1);document.getElementById("number").innerHTML=number;setTimeout("add()",10000);}        
+function generate(){number=Math.floor(Math.random()*1143)+1578;document.getElementById("number").innerHTML=number;add();}
+generate();</script>
+</div>
     <section class="comments py-4">
       <div class="container">
         <div class="row justify-content-center">
